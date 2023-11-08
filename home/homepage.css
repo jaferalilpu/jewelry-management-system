@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+}
+
+.container {
+  border: double 2px #000;
+  border-radius: 7px;
+  padding: 16px;
+  position: fixed;
+  overflow-y: auto;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: azure;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.navbar img {
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  padding-top: 17px;
+  padding-left: 10px;
+  float: left;
+}
+
+.navbar p {
+  float: left;
+  color: cadetblue;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin-left: 0;
+}
+
+.hello .flip-card .flip-card-inner .center {
+  position: absolute;
+  bottom: 5%;
+  left: 60%;
+  border: none;
+  transform: translate(-50%, 50%);
+  transition: 3px;
+  font-size: 2rem;
+  color: rgb(126, 195, 48);
+  font-family: sans-serif;
+  animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+.flip-card:hover .hello .flip-card .flip-card-inner .center {
+  transform: translate(-50%, 0);
+  width: 70%;
+  font-size: 2rem;
+}
+.flip-card:hover .hello .flip-card .flip-card-inner .center:hover {
+  transform: translate(-50%, 0);
+  width: 90%;
+  font-size: 3rem;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 100px;
+}
+
+.hello {
+  display: flex;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front,.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.footer {
+  border: #000;
+  background-image: linear-gradient(pink,orange);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  color: #fff;
+  margin: 20px;
+  display: inline;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #000;
+  margin: 20px;
+  padding: 4px;
+}
+
+.footer .box-container .box a i {
+  color:yellow;
+  padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover {
+  color: yellow;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .box {
+    padding-left: 20px;
+    margin: 0 0.5rem;
+  }
+
+
+.footer .credit {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color:black;
+}
+
+.footer .credit span {
+  color:yellow;
+}
+.footer .box-container .box{
+  padding-left: 20px;
+}
+section{
+  padding:2rem 9%;
+}
+@media (min-width:600px){
+  .header{
+      padding: 2rem;
+  }
+  section{
+      padding:3rem 2rem;
+  }
+}
+.heading
+{
+text-align: center;
+font-size: 2rem;
+color: chocolate;
+animation-name: floating;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+margin-left: 30px;
+margin-top: 5px;
+}
+ 
+@keyframes floating { 
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+.heading:hover
+{
+  color: pink;
+}
+.hello .flip-card .flip-card-inner img
+{
+  border-radius: 20px;
+  border: 0.2px double black;
+}
+.hello .flip-card .flip-card-inner img:hover
+{
+transform: scale(1.1);
+}
+
+
