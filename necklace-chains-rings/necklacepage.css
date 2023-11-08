@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+}
+
+.container {
+  border: double 2px #000;
+  border-radius: 7px;
+  padding: 16px;
+  position: fixed;
+  overflow-y: auto;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: azure;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.navbar img {
+  height: 80px;
+  width: 70px;
+  align-items: center;
+  padding-top: 17px;
+  padding-left: 10px;
+  float: left;
+}
+
+.navbar p {
+  float: left;
+  color: cadetblue;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin-left: 0;
+}
+  .box .image-box {
+    display: flex;
+  }
+  
+  .box .image-box .hello-inner{
+    flex: 33.33%;
+    padding: 15px;
+    margin: 40px;
+  }
+  .box .box-image {
+    display: flex;
+  }
+  
+  .box .box-image .hello-inner{
+    flex: 33.33%;
+    padding: 15px;
+    margin: 40px;
+  }
+  #counting
+  {
+    color: orange;
+  }
+  #increment-cart
+  {
+    display: flex;
+  }
+  .hello-inner .hell
+  {
+  display: flex;
+  width: 100%;
+  padding :5px;
+  justify-content:space-between;
+  }
