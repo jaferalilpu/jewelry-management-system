@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewelry-Management-System</title>
+</head>
+<body>
+  <div class="flip-card">
+    <div class="flip-card-front">
+      <div class="logininfo">
+        <form>
+          <div class="imgcontainer">
+            <img src="/img/avatar.jpg" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required id="user">
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required id="password">
+
+            <button type="button" id="submit" onclick="f()">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+
+          <div class="container1">
+            <button type="reset" class="cancelbtn">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#submit').on('click', function() {
+        var name = $('#user').val().trim();
+        var password = $('#password').val().trim();
+
+        if (name === "" || password === "") {
+          alert('Please fill in all the fields.');
+          return;
+        }
+        else{
+        alert('Submitted Data:\nUsername: ' + name + '\nPassword: ' + f1() );
+        function f1()
+        {
+          for (var i =0;i<password.length;i++)
+          {
+            console.log('x');
+          }
+        }
+        $('#user').val('');
+        $('#password').val('');
+      }
+      });
+    });
+  </script>
+  <script>
+    function f()
+    {
+      window.location.href="homepage.html";
+    }
+  </script>
+</body>
+</html>
